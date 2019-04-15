@@ -30,22 +30,6 @@ Image IMG = ii.getImage();
         return IMG;
     }
 
-    public static int getX() {
-        return x;
-    }
-
-    public static int getY() {
-        return y;
-    }
-
-    public static int getVx() {
-        return vx;
-    }
-
-    public static int getVy() {
-        return vy;
-    }
-
     public static int getSize() {
         return size;
     }

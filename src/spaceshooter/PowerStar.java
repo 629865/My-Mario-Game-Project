@@ -8,7 +8,7 @@ package spaceshooter;
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
-import static spaceshooter.PowerUps.x;
+import spaceshooter.PowerUps;
 
 /**
  *

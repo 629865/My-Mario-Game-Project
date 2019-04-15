@@ -120,6 +120,10 @@ public class Ecosystem extends JPanel {
                   mario.transform(mario , superLeaf);
                   
               }
+              if (characterVsCharacter(mario, fireFlower)){
+                  mario.transform(mario , fireFlower);
+                  
+              }
         }
     }
     private boolean characterVsCharacter(Creature c1, Creature c2) {

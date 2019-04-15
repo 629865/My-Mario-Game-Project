@@ -20,6 +20,8 @@ ImageIcon ii = new ImageIcon(getClass().getResource("/images/Mario.gif"));
 Image IMG = ii.getImage();
 ImageIcon ii2 = new ImageIcon(getClass().getResource("/images/Raccoon Mario.gif"));
 Image IMG2 = ii2.getImage();
+ImageIcon ii3 = new ImageIcon(getClass().getResource("/images/Fire Mario.gif"));
+Image IMG3 = ii3.getImage();
       @Override
     public void draw(Graphics g) {
         g.drawImage(IMG, x, y, width, height, null);
@@ -27,6 +29,9 @@ Image IMG2 = ii2.getImage();
     
    public void draw2(Graphics g) {
 g.drawImage(IMG2, x, y, 82, 68, null);
+    }
+   public void draw3(Graphics g) {
+g.drawImage(IMG3, x, y, 170, 170, null);
     }
     
     public int getX() {
@@ -59,6 +64,9 @@ g.drawImage(IMG2, x, y, 82, 68, null);
      public Image getIMG2() {
         return IMG2;
     }
+      public Image getIMG3() {
+        return IMG3;
+    }
 
     public void setIi(ImageIcon ii) {
         this.ii = ii;
@@ -69,6 +77,9 @@ g.drawImage(IMG2, x, y, 82, 68, null);
     }
     public void setIMG2(Image IMG2) {
         this.IMG2 = IMG2;
+    }
+    public void setIMG3(Image IMG3) {
+        this.IMG3 = IMG3;
     }
 
     public void setX(int x) {
@@ -95,6 +106,11 @@ g.drawImage(IMG2, x, y, 82, 68, null);
             mario.setIMG(ii2.getImage());
             width = 82;
             height = 68;
+    }
+    public void transform(Mario mario, FireFlower fireFlower) {
+            mario.setIMG(ii3.getImage());
+            width = 170;
+            height = 170;
     }
 
 }
